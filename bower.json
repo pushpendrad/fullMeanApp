@@ -1,0 +1,13 @@
+{
+  "name": "fullMeanApp",
+  "version": "1.0.0",
+  "homepage": "https://github.com/vaibhavjain882/fullMeanApplication",
+  "authors": [
+    "Vaibhav Jain <vaibhavjain882@gmail.com>"
+  ],
+  "description": "complete Mean app",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.4"
+  }
+}

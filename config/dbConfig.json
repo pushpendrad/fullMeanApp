@@ -1,0 +1,7 @@
+{
+	"dbConfig":{
+		"dbName" : "cybageALM",
+		"IP" : "localhost",
+		"port" : "27017"
+	}
+}
