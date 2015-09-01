@@ -10,7 +10,7 @@ var port = process.env.PORT || 5678;
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-//app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public"));
 
 
 var db = mongoose.connect("mongodb://"+dbConfig.IP+":"+dbConfig.port+"/"+dbConfig.dbName, function(err){
@@ -34,9 +34,9 @@ var projectDetailRouter = require('./routes/projectDetailRouter')(projectDetail)
 app.use('/alm/register',userRegistrationRouter);
 app.use('/alm/projectdetails',projectDetailRouter);
 
-app.get('/',function(req,res){
+/*app.get('/',function(req,res){
 	res.send("Hello from vaibhav");
-});
+});*/
 
 app.listen(port,function() {
 	console.log('Grunt is istening on ' + port + ' port');
