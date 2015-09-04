@@ -10,7 +10,7 @@ var projectDetailModel = new Schema({
 	},
 	projectName: {
 		type: String,
-		required: true 
+		required: true
 	},
 	startDate: {
 		type: Date
@@ -63,7 +63,7 @@ var projectDetailModel = new Schema({
 	almImplemented: {
 		type: Boolean,
 		default: false
-	},
+	}
 });
 console.log("Inside projectDetailModel");
 

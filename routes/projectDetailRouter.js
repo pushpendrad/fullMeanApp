@@ -1,7 +1,6 @@
-
 var express = require('express');
 
-var projectDetailRoute = function(projectDetail){ 
+var projectDetailRoute = function(projectDetail){
 
   var projectDetailRouter = express.Router();
 
@@ -22,10 +21,8 @@ var projectDetailRoute = function(projectDetail){
               var project = new projectDetail(req.body);
                 project.save();
                 res.status(201).send('Successfully Submitted');
-            })
+            });
 
-
-    
     projectDetailRouter.route('/:projectId')
 
       .get(function(req,res){
@@ -33,8 +30,7 @@ var projectDetailRoute = function(projectDetail){
             if(err)
                 res.status(500).send(err);
             else
-            res.json(data);    
-           // res.status(201).send("Removed");
+            res.json(data);
         });
      })
     
@@ -45,13 +41,6 @@ var projectDetailRoute = function(projectDetail){
           console.log("deleted the id");
           console.log(err);
         });
-        /*findById(req.params.projectId,function(err,data){
-            if(err)
-                res.status(500).send(err);
-            else
-                data.remove();
-            res.status(201).send("Removed");
-        });*/
      });
   
         return projectDetailRouter;

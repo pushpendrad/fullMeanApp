@@ -12,11 +12,11 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
 
-
+//database configurations are stored in dbConfig file
 var db = mongoose.connect("mongodb://"+dbConfig.IP+":"+dbConfig.port+"/"+dbConfig.dbName, function(err){
     if(err)
         throw err;
-}); //database configurations are stored in dbConfig file
+});
 
 
 
