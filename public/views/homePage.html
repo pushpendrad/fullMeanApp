@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+
+<html ng-app="meanApp">
     <head>
-        <title>frontPage</title>
+        <title>homePage</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ANGULAR dEPENDENCIES -->
+        <script src = "bower_components/angular/angular.min.js"></script>
+        <script src = "bower_components/angular-route/angular-route.js"></script>
+        <!--PROJECT CONTROLLERS-->
+        <script src = "controllers/masterController.js"></script>
+        <script src = "controllers/homeCtrl.js"></script>
+
     </head>
+
     <body>
         <div>
             <table>
@@ -26,7 +30,7 @@ and open the template in the editor.
         <div>
             <table border="1">
                 <tr>
-                    <td rowspan="7"> ALM this that</td>
+                    <td rowspan="8"> This Column is inientionally left blank for future design</td>
                 </tr>
                 <tr>
                     <td>
@@ -34,19 +38,23 @@ and open the template in the editor.
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="text" value="First Name"></td>
+                    <td><input type="text" value="First Name" ng-model="user.firstname"></td>
                 </tr>
                 <tr>
-                    <td><input type="text" value="Last Name"></td>
+                    <td><input type="text" value="Last Name" ng-model="user.lastname"></td>
                 </tr>
                 <tr>
-                    <td><input type="text" value="User Name"></td>
+                    <td><input type="text" value="Email ID" ng-model="user.emailid"></td>
+                </tr>
+                
+                <tr>
+                    <td><input type="text" value="User Name" ng-model="user.username"></td>
                 </tr>
                 <tr>
-                    <td><input type="password" value="Password"></td>
+                    <td><input type="password" value="Password" ng-model="user.password"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="Signup"></td>
+                    <td><input type="button" value="Signup" ng-click="signUp()></td>
                 </tr>
             </table>
         </div>
