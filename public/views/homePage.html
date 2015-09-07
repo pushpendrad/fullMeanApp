@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-
-<html ng-app="meanApp">
-    <head>
-        <title>homePage</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- ANGULAR dEPENDENCIES -->
-        <script src = "bower_components/angular/angular.min.js"></script>
-        <script src = "bower_components/angular-route/angular-route.js"></script>
-        <!--PROJECT CONTROLLERS-->
-        <script src = "controllers/masterController.js"></script>
-        <script src = "controllers/homeCtrl.js"></script>
-
-    </head>
-
-    <body>
+<!--This page starts from div because it is going to inject in the ng-view of index.html --> 
+<div>
         <div>
             <table>
                 <tr>
@@ -27,6 +12,7 @@
             </table>
         </div>
         </br>
+
         <div>
             <table border="1">
                 <tr>
@@ -54,10 +40,11 @@
                     <td><input type="password" value="Password" ng-model="user.password"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="Signup" ng-click="signUp()></td>
+                    <td><input type="button" value="Signup" ng-click="signUp()"></td>
                 </tr>
             </table>
         </div>
+
         <div>
             <table border="1">
                 <tr>
@@ -81,5 +68,4 @@
                 </tr>
             </table>
         </div>
-    </body>
-</html>
+    </div>
