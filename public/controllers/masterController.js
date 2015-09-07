@@ -1,8 +1,7 @@
 console.log("Inside Master Controller");
 var meanApp = angular.module('meanApp',['ngRoute','HomeController','HomePageController']);
 
-meanApp.config(['$routeProvider',
-  function($routeProvider) {
+meanApp.config(['$routeProvider','$httpProvider',function($routeProvider,$httpProvider) {
     $routeProvider.
       when('/home', {
         templateUrl: 'views/home.html',
@@ -27,4 +26,5 @@ meanApp.config(['$routeProvider',
       otherwise({
         redirectTo: '/homePage'
       });
+      $httpProvider.defaults.headers.post["Content-Type"] = "Application/JSON";
   }]);
