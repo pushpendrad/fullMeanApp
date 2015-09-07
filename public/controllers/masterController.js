@@ -12,6 +12,10 @@ meanApp.config(['$routeProvider',
         templateUrl: 'views/homePage.html',
         controller: 'homePageCtrl'
       }).
+      when('/tabs', {
+        templateUrl: 'views/tabs.html',
+        controller: 'homePageCtrl'
+      }).
 
       /*
       when('/login', {
