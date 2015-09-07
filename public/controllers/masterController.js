@@ -1,5 +1,5 @@
 console.log("Inside Master Controller");
-var meanApp = angular.module('meanApp',['ngRoute','HomeController']);
+var meanApp = angular.module('meanApp',['ngRoute','HomeController','HomePageController']);
 
 meanApp.config(['$routeProvider',
   function($routeProvider) {
