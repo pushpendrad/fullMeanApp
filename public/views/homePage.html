@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html ng-app="meanApp">
+    <head>
+        <title>homePage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ANGULAR dEPENDENCIES -->
+        <script src = "bower_components/angular/angular.min.js"></script>
+        <script src = "bower_components/angular-route/angular-route.js"></script>
+        <!--PROJECT CONTROLLERS-->
+        <script src = "controllers/masterController.js"></script>
+        <script src = "controllers/homeCtrl.js"></script>
+
+    </head>
+
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td>ALM Image</td>
+                    <td><input type="button" name="Explore" value="explore"></td>
+                    <td><input type="button" name="Help" value="help"></td>
+                    <td><input type="text" value="Search"/></td>
+                    <td><input type="button" name="Login" value="login"></td>
+                </tr>
+            </table>
+        </div>
+        </br>
+        <div>
+            <table border="1">
+                <tr>
+                    <td rowspan="8"> This Column is inientionally left blank for future design</td>
+                </tr>
+                <tr>
+                    <td>
+                        Create your account
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="First Name" ng-model="user.firstname"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Last Name" ng-model="user.lastname"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Email ID" ng-model="user.emailid"></td>
+                </tr>
+                
+                <tr>
+                    <td><input type="text" value="User Name" ng-model="user.username"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" value="Password" ng-model="user.password"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Signup" ng-click="signUp()></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table border="1">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            Explore Tools
+        </div>
+        <div>
+            <table border="1">
+                <tr>
+                    <td>Maven Image</td>
+                    <td>Grunt Image</td>
+                    <td>Jenkins Image</td>
+                    <td>Sonar Image</td>
+                    <td>Phig</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

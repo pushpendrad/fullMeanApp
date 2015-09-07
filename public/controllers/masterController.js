@@ -8,6 +8,11 @@ meanApp.config(['$routeProvider',
         templateUrl: 'views/home.html',
         controller: 'homeCtrl'
       }).
+      when('/homePage', {
+        templateUrl: 'views/homePage.html',
+        controller: 'homePageCtrl'
+      }).
+
       /*
       when('/login', {
         templateUrl: 'login.html',
@@ -20,6 +25,6 @@ meanApp.config(['$routeProvider',
       }). 
       */
       otherwise({
-        redirectTo: '/home'
+        redirectTo: '/homePage'
       });
   }]);
