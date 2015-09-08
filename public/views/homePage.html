@@ -4,10 +4,10 @@
             <table>
                 <tr>
                     <td>ALM Image</td>
-                    <td><input type="button" name="Explore" value="explore"></td>
-                    <td><input type="button" name="Help" value="help"></td>
+                    <td><input type="button" name="Explore" value="explore" class="btn btn-primary btn-lg btn-block"></td>
+                    <td><input type="button" name="Help" value="help"  class="btn btn-primary btn-lg btn-block"></td>
                     <td><input type="text" value="Search"/></td>
-                    <td><input type="button" name="Login" value="login"></td>
+                    <td><input type="button" name="Login" value="login"  class="btn btn-primary btn-lg btn-block"></td>
                 </tr>
             </table>
         </div>
@@ -40,8 +40,7 @@
                     <td><input type="password" value="Password" ng-model="user.password"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="Signup" ng-click="signUp()"> {{registerStatus}}</td>
-					<td>{{registerStatus}}</td>
+                    <td><input type="button" value="Signup" ng-click="signUp()" class="btn btn-primary btn-lg btn-block"> {{registerStatus}}</td>
                 </tr>
             </table>
         </div>
