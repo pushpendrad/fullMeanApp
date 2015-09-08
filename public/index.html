@@ -13,6 +13,7 @@
 <script src = "controllers/masterController.js"></script>
 <script src = "controllers/homeCtrl.js"></script>
 <script src = "controllers/homePageCtrl.js"></script>
+<script src = "controllers/loginCtrl.js"></script>
 
 </head>
 
@@ -21,11 +22,21 @@
 <div id="header_container">
     
     <div id="header"> 
-       Cybage ALM Portal Thistext comes from 1st div of the Index.HTML 
+       Cybage ALM Portal this text comes from 1st div of the Index.HTML 
     </div>
     
 </div>
-
+        <div>
+            <table>
+                <tr>
+                    <td>ALM Image</td>
+                    <td><input type="button" name="explore" value="Explore"></td>
+                    <td><input type="button" name="Help" value="Help"></td>
+                    <td><input type="text" value="Search"/></td>
+                    <td><a href="/#/login"><input type="button" name="login" value="Login"></a></td>
+                </tr>
+            </table>
+        </div>
 <div ng-view></div>
 
 </body>
