@@ -15,6 +15,13 @@ meanApp.config(['$routeProvider','$httpProvider',function($routeProvider,$httpPr
         templateUrl: 'views/tabs.html',
         controller: 'homePageCtrl'
       }).
+<<<<<<< HEAD
+	when('/mytabpane', {
+        templateUrl: 'views/mytabpane.html',
+      }).
+      /*
+=======
+>>>>>>> controller
       when('/login', {
         templateUrl: 'views/login.html',
         controller: 'loginCtrl'
