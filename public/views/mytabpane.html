@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Example - example-example23-production</title>
+  
+<meta http-equiv="Content-Type" content="application/json; charset=ISO-8859-1">
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="controllers/mytabpaneCtrl.js"></script>
+  
+</head>
+<body>
+<!-- <body ng-app="meanApp"> -->
+  <my-tabs>
+  <my-pane title="Hello">
+    <h4>Hello</h4>
+    <p>Lorem ipsum dolor sit amet</p>
+  </my-pane>
+  <my-pane title="World">
+    <h4>World</h4>
+    <em>Mauris elementum elementum enim at suscipit.</em>
+    <p><a href ng-click="i = i + 1">counter: {{i || 0}}</a></p>
+  </my-pane>
+</my-tabs>
+</body>
+</html>
