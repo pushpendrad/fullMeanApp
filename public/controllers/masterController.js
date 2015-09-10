@@ -20,18 +20,12 @@ meanApp.config(['$routeProvider','$httpProvider',function($routeProvider,$httpPr
       }).
 	  when('/tabmarkup', {
         templateUrl: 'views/tabmarkup.html'
-      }).
-      /*
+	  when('/mytabpane', {
+        templateUrl: 'views/mytabpane.html',
       when('/login', {
-        templateUrl: 'login.html',
+        templateUrl: 'views/login.html',
         controller: 'loginCtrl'
       }).
-       
-        when('/edit/:id', {
-        templateUrl: 'edit.html',
-        controller: 'EditCtrl'
-      }). 
-      */
       otherwise({
         redirectTo: '/homePage'
       });
