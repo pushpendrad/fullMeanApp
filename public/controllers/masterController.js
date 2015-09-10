@@ -1,4 +1,4 @@
-console.log("Inside Master Controller");
+  console.log("Inside Master Controller");
 var meanApp = angular.module('meanApp',['ngRoute','HomeController','HomePageController','LoginController']);
 
 meanApp.config(['$routeProvider','$httpProvider',function($routeProvider,$httpProvider) {
@@ -15,13 +15,9 @@ meanApp.config(['$routeProvider','$httpProvider',function($routeProvider,$httpPr
         templateUrl: 'views/tabs.html',
         controller: 'homePageCtrl'
       }).
-<<<<<<< HEAD
-	when('/mytabpane', {
+  	  when('/mytabpane', {
         templateUrl: 'views/mytabpane.html',
       }).
-      /*
-=======
->>>>>>> controller
       when('/login', {
         templateUrl: 'views/login.html',
         controller: 'loginCtrl'
