@@ -29,7 +29,21 @@ var userRegisterRoute = function(userRegistration){
                 user.save();
                 res.status(201).send('Successfully Register');
             });
-     
+
+      userRegistrationRouter.route('/:userName')
+
+        .get(function(req,res){
+            userRegistration.findOne({'userName' : req.params.userName}, function(err,data){
+              if (err) {
+                res.status(500).send(err);
+              }
+              else {
+                console.log("Inside get by Name for login ");
+                res.json(data);
+              }
+            });
+        });
+
         return userRegistrationRouter;
     };
 
