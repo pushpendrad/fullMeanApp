@@ -1,8 +1,11 @@
+<!--This is First Page-->
 <!DOCTYPE html>
 <html ng-app="meanApp">
     
 <head>
-<title>MEAN APPLICATION</title>
+<title>ALM APPLICATION</title>
+
+<meta http-equiv="Content-Type" content="application/json; charset=ISO-8859-1">
 
 <script src = "bower_components/angular/angular.min.js"></script>
 <script src = "bower_components/angular-route/angular-route.js"></script>
@@ -11,6 +14,16 @@
 <script src = "controllers/homeCtrl.js"></script>
 <script src = "controllers/homePageCtrl.js"></script>
 
+<script src = "controllers/mytabpaneCtrl.js"></script>
+<script src = "controllers/tabCtrl.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"></script>
+<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.4.js"></script>
+
+<script src = "controllers/loginCtrl.js"></script>
+
+<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<link href="bower_components/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -18,11 +31,21 @@
 <div id="header_container">
     
     <div id="header"> 
-       Cybage ALM Portal Thistext comes from 1st div of the Index.HTML 
+       Cybage ALM Portal this text comes from 1st div of the Index.HTML 
     </div>
     
-</div>
-
+</div> 
+        <div>
+            <table>
+                <tr>
+                    <td>ALM Image</td>
+                    <td><input type="button" name="explore" value="Explore"></td>
+                    <td><input type="button" name="Help" value="Help"></td>
+                    <td><input type="text" value="Search"/></td>
+                    <td><a href="/#/login"><input type="button" name="login" value="Login"></a></td>
+                </tr>
+            </table>
+        </div>
 <div ng-view></div>
 
 </body>

@@ -1,3 +1,4 @@
+
 var express = require('express');
 
 var userRegisterRoute = function(userRegistration){ 
@@ -17,11 +18,32 @@ var userRegisterRoute = function(userRegistration){
 
         .post(function(req,res){
             console.log("Inside post of user userRegistrationRouter");
-              var user = new userRegistration(req.body);
+              var user = new userRegistration(req.body)
+                /*{
+                  firstName:req.body.firstName,
+                  lastName:req.body.lastName,
+                  emailId:req.body.emailId,
+                  userName:req.body.userName,
+                  password: req.body.password
+                });*/
                 user.save();
                 res.status(201).send('Successfully Register');
             });
-     
+
+      userRegistrationRouter.route('/:userName')
+
+        .get(function(req,res){
+            userRegistration.findOne({'userName' : req.params.userName}, function(err,data){
+              if (err) {
+                res.status(500).send(err);
+              }
+              else {
+                console.log("Inside get by Name for login ");
+                res.json(data);
+              }
+            });
+        });
+
         return userRegistrationRouter;
     };
 

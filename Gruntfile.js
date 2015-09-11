@@ -25,11 +25,9 @@ module.exports = function(grunt) {
 	},
         watch: {
             server: {
-                files: ['/**/*.js', '/**/*.html'],
-                tasks: ['jshint', 'nodemon'],
-                options: {
-                    interrupt: true
-                }
+		/*No need to include HTML files in watch task*/
+                files: ['app.js','routes/*.js','public/controllers/*.js','models/*.js','config/*'],
+                tasks: [/*'jshint',*/ 'nodemon']
             }
         }
     });
@@ -37,6 +35,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-nodemon');
         grunt.loadNpmTasks('grunt-contrib-watch');
         grunt.loadNpmTasks('grunt-contrib-jshint');
-        grunt.registerTask('analyse', ['jshint','watch']);
-        grunt.registerTask('default', ['nodemon']);
+        grunt.registerTask('analyse', ['jshint']);
+        grunt.registerTask('default', ['nodemon','watch']);
 };

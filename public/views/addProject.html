@@ -1,0 +1,84 @@
+<!--testing merge conflicts-->
+
+<!--Comment 2-->
+<div>
+    <table border="1">
+       
+        <tr>
+            <td>
+                Create your account
+            </td>
+        </tr>
+
+        <tr>
+            <!--user ID  need to discuss with prakash-->
+            <input type="hidden" name="uId" value=""/>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Project ID in MIS" name="projectId" ng-model="project.projectID"></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Project Name" name="projectName" ng-model="project.projectName"></td>
+        </tr>
+        <tr>
+            <td><input type="date" name="startDate" ng-model="project.startDate"></td>
+        </tr>
+        
+        <tr>
+            <td><input type="date" name="endDate" ng-model="project.endDate"></td>
+        </tr>
+        <tr>
+            <td><input type="string" placeholder="Vice President" name="vicePresident" ng-model="project.vicePresident"></td>
+        </tr>
+        <tr>
+            <td><input type="string" placeholder="Delivery Head" name="deliveryHead" ng-model="project.deliveryHead"></td>
+        </tr>
+
+        <tr>
+            <td><input type="string" placeholder="Senior Project Manager" name="seniorProjectManager" ng-model="project.seniorProjectManager"></td>
+        </tr>
+
+        <tr>
+            <td><input type="string" placeholder="Project Manager" name="projectManager" ng-model="project.projectManager"></td>
+        </tr>
+
+
+        <tr>
+            <td><input type="string" placeholder="Languages Used" name="language" ng-model="project.language"></td>
+        </tr>
+
+        <tr>
+            <td><input type="string" placeholder="DataBase Used" name="dataBase" ng-model="project.dataBase"></td>
+        </tr>
+
+        <tr>
+            <td><input type="string" placeholder="Operating System Used" name="operatingSystem" ng-model="project.operatingSystem"></td>
+        </tr>
+
+        <tr>
+            <td><input type="string" placeholder="Build Tool Used" name="buildTool" ng-model="project.buildTool"></td>
+        </tr>
+
+
+        <tr>
+            <td><input type="string" placeholder="CI Server Used" name="cIServer" ng-model="project.cIServer"></td>
+        </tr>
+
+
+
+
+        <tr>
+            <td><input type="checkbox" name="sonarImplemented" ng-model="project.sonarImplemented"></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="almImplemented" ng-model="project.almImplemented"></td>
+        </tr>
+
+
+
+        <tr>
+            <td><input type="button" value="Add" ng-click="add()"> </td>
+        </tr>
+    </table>
+</div>

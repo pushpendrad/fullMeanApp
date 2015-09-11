@@ -3,6 +3,10 @@ var Schema = mongoose.Schema;
 
 var projectDetailModel = new Schema({
 
+	uId: {
+		type: String,
+		required: true
+	},
 	projectID: {
 		type: String,
 		required: true,
