@@ -76,7 +76,7 @@
 				</tab>
 				<tab heading="Help">Help</tab>
 				<tab heading="Login" href="/#/login">
-					<div ng-view/>
+					<a href="/#/login"><input type="button" name="login" value="Login"></a>
 					<!-- <table border="2">
 						<tr>
 							<td>
