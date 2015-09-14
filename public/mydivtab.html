@@ -1,0 +1,14 @@
+<div class="tabbable">
+  <ul class="nav nav-tabs">
+    <li ng-class="{active: currentRoute=='jobs'}">
+      <a href="/jobs">Jobs</a>
+    </li>
+    <li ng-class="{active: currentRoute=='invoices'}">
+      <a href="/invoices">Invoices</a>
+    </li>
+    <li ng-class="{active: currentRoute=='payments'}">
+      <a href="/invoices">Payments</a>
+    </li>
+  </ul>
+  <div class="tab-content" ng-view></div>
+</div>
