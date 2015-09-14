@@ -8,7 +8,7 @@ loginController.controller('loginCtrl',['$scope','$http', function($scope,$http)
 	
             $http.get('/alm/register/'+ $scope.user.userName).success(function(response){
                 var dBUser = response;
-                   // console.log(dBUser);  
+                    console.log(dBUser);  
                     //console.log('/alm/register/' + $scope.user.userName);
                     if(dBUser.password == $scope.user.password){
                         console.log("Login Successful");
