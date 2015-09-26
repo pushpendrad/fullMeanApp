@@ -1,5 +1,7 @@
 
 var express = require('express');
+var app = express();
+
 
 var userRegisterRoute = function(userRegistration){ 
   var userRegistrationRouter = express.Router();
