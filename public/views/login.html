@@ -1,19 +1,22 @@
 <!--This page starts from div because it is going to inject in the ng-view of index.html --> 
-        <div>
-            <table border="2">
-                <tr>
-                    <td>
-                        Login Page
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="text" name = "userName" placeholder="User Name" ng-model="user.userName"></td>
-                </tr>
-                <tr>
-                    <td><input type="password" name="Password" placeholder="Password" ng-model="user.password"></td>
-                </tr>
-                <tr>
-                    <td><input type="button" value="Login" ng-click="login()"> </td>
-                </tr>
-            </table>
-        </div>
+	<div>
+		<form novalidate class="css-form">
+            <table border="2"> 
+                 <tr> 
+                     <td> 
+                         Login Page 
+                     </td> 
+                 </tr> 
+                 <tr> 
+                     <td><input type="text" name="userName" placeholder="User Name" ng-model="user.userName" required="">
+					 </td> 
+                 </tr> 
+                 <tr> 
+                     <td><input type="password" name="Password" placeholder="Password" ng-model="user.password" required></td> 
+                 </tr> 
+                 <tr> 
+                     <td><input type="button" value="Login" ng-click="login()"> </td> 
+                 </tr> 
+             </table> 
+		</form>
+    </div>

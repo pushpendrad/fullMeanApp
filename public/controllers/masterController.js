@@ -10,8 +10,6 @@ meanApp.config(['$routeProvider','$httpProvider',function($routeProvider,$httpPr
       when('/homePage', { 
 	    templateUrl: 'views/homePage.html',
         controller: 'homePageCtrl',
-		replace: false,
-		transclude: true
       }).
       when('/tabs', {
         templateUrl: 'views/tabs.html',
@@ -33,3 +31,21 @@ meanApp.config(['$routeProvider','$httpProvider',function($routeProvider,$httpPr
       });
       $httpProvider.defaults.headers.post["Content-Type"] = "Application/JSON";
   }]);
+  
+meanApp.animation('.reveal-animation', function() {
+  return {
+    enter: function(element, done) {
+      element.css('display', 'none');
+      element.fadeIn(2000, done);
+      return function() {
+        element.stop();
+      }
+    },
+    leave: function(element, done) {
+      element.fadeOut(2000, done)
+      return function() {
+        element.stop();
+      }
+    }
+  }
+})

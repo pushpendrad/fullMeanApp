@@ -2,34 +2,36 @@
 <!--This page starts from div because it is going to inject in the ng-view of index.html --> 
 <div>
         <div>
-            <table border="1">
-                <tr>
-                    <td rowspan="8"> This Column is inientionally left blank for future design</td>
-                </tr>
-                <tr>
-                    <td>
-                        Create your account
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="text" placeholder="First Name" name="firstName" ng-model="user.firstName"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" placeholder="Last Name" name="lastName" ng-model="user.lastName"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" placeholder="Email" name="emailId" ng-model="user.emailId"></td>
-                </tr>
-                
-                <tr>
-                    <td><input type="text" placeholder="User Name" name="userName" ng-model="user.userName" required></td>
-                </tr>
-                <tr>
-                    <td><input type="password" placeholder="Password" name="password" ng-model="user.password" required></td>
-                </tr>
-                <tr>
-                    <td><input type="button" value="Signup" ng-click="signUp()" class="btn btn-primary btn-lg btn-block"> {{registerStatus}}</td>
-                </tr>
-            </table>
+			<form novalidate class="css-form">
+				<table border="1">
+					<tr>
+						<td rowspan="8"> This Column is inientionally left blank for future design</td>
+					</tr>
+					<tr>
+						<td>
+							Create your account
+						</td>
+					</tr>
+					<tr>
+						<td><input type="text" placeholder="First Name" name="firstName" ng-model="user.firstName" required></td>
+					</tr>
+					<tr>
+						<td><input type="text" placeholder="Last Name" name="lastName" ng-model="user.lastName" required></td>
+					</tr>
+					<tr>
+						<td><input type="text" placeholder="Email" name="emailId" ng-model="user.emailId" required></td>
+					</tr>
+					
+					<tr>
+						<td><input type="text" placeholder="User Name" name="userName" ng-model="user.userName" required></td>
+					</tr>
+					<tr>
+						<td><input type="password" placeholder="Password" name="password" ng-model="user.password" required></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="Signup" ng-click="signUp()" class="btn btn-primary btn-lg btn-block"> {{registerStatus}}</td>
+					</tr>
+				</table>
+			</form>
         </div>
     </div>
